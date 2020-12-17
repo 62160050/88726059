@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>test</title>
+
+</head>
+<body>
+    <body background="C:\62160050\88726059\lab04\BG2.jpg"></body>
+    <script>
+        rn = Math.floor(Math.random() * 100);
+        //document.write(rn);
+        function guess(){
+            num = document.getElementById('number');
+            hist = document.getElementById('hist');
+            result = document.getElementById('result');
+            hist.innerHTML += num.value +" "
+            
+    
+            if(parseInt(num.value)==rn){
+                result.innerHTML= "ถูกต้องแล้วเก่งมากๆๆ" 
+            }
+            else if(parseInt(num.value)<rn) {
+                result.innerHTML= "น้อยไปนะ"
+            }
+            else if(parseInt(num.value)>rn) {
+                result.innerHTML= "มากไปนะ"
+            }
+        }
+        function startOver(){
+            num = document.getElementById('number').value=""
+            hist = document.getElementById('hist').innerHTML=""
+            result = document.getElementById('result').innerHTML=""
+            rn = Math.floor(Math.random() * 100);
+        
+        }
+    </script>
+    <center><font color="#FFFFCC"><h1>Number guessing game.</h1></font></center>
+    <center><a>-------------------------------------</a></center>
+    <center><font color="#FFFFCC"><th>Enter a guess here</th></font></center><br>
+    <center><input type="text" placeholder="                      ?" id="number"></center><br>
+    <center><button onclick="guess()"class="btn btn-success">Gress</button></center><br>
+    <center><font color="#FFFFCC"><div id="hist"></div></font></center><br>
+    <center><font color="#FFFFCC"><div id="result"></div></font></center><br>
+    <center><button onclick="startOver()"class="btn btn-danger">Start Over</button></center>
+
+</body>
+</html>
