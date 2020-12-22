@@ -1,0 +1,37 @@
+
+<script>
+        function cal(){
+            num1 = document.getElementById('num1');
+            num2 = document.getElementById('num2');
+            var sum = document.getElementById('sum');
+            num =document.getElementById('num');
+            if(parseInt(num.value) == 1){
+                sum.innerHTML=parseInt(num1.value) + parseInt(num2.value)
+            }
+            if(parseInt(num.value) == 2){
+                sum.innerHTML=parseInt(num1.value) - parseInt(num2.value)
+            }
+            if(parseInt(num.value) == 3){
+                sum.innerHTML=parseInt(num1.value) * parseInt(num2.value)
+            }
+            if(parseInt(num.value) == 4){
+                sum.innerHTML=parseInt(num1.value) / parseInt(num2.value)
+            }
+           
+       
+        } 
+</script>
+<body>
+            <th>3.โปรแกรม เครื่องคิดเลข - cal.html</th><br><br>
+            <input type="text"  id="num1">
+            <select name="mark" id="num">
+            <option value="1" >+</option>
+            <option value="2" >-</option>
+            <option value="3" >*</option>
+            <option value="4" >/</option>
+            </select>
+            <input type="text"  id="num2">
+            <button onclick="cal()">=</button><br>
+            <div id="sum"></div>
+            
+</body>
