@@ -1,15 +1,36 @@
 
-<script>
-    function multi(n) {
-        div = document.getElementById('disp');
-        div.innerHTML = ""; // 
-        for (i = 1; i <= 12; i++) {
-            div.innerHTML += n + "x" + i + "=" + (n * i) + "<br>";
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+<th>2.โปรแกรม สูตรคูณ - multi.html</th><br><br>
+    <script>
+        function multi(n) {
+            div = document.getElementById('disp')
+            div.innerHTML = ''
+            table = ``
+
+            for (i = 1; i <= 12; i++) {
+                table += `<tr>
+                            <td>${n} x ${i} = </td>
+                            <td>${n*i}</td>
+                        </tr>`
+                
         }
+        div.innerHTML = table
     }
     
-</script>
-<th>2.โปรแกรม สูตรคูณ - multi.html</th><br><br>
-<input type="text" placeholder="สูตรคูณแม่ x" onkeyup="multi(this.value);">
-<div id="disp" ></div>
+    </script>
+    </head>
+    <body >
+        <input type="text" placeholder="สูตรคูณแม่ X" onkeyup="multi(this.value);"><br><br>
+        <table border="1" >
+        <tbody id="disp">
+    
+        </tbody>
+        </table>
+    </body>
+    
+</html>
 
