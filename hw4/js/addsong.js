@@ -1,6 +1,6 @@
 function addsong(){
         songs = localStorage.getItem('songs');
-        if(songs === null){
+        if(songs === 'null'){
             songs = [];
             
         }else{
@@ -25,4 +25,3 @@ function Clearform(){
     document.getElementById('artist').value =''
     document.getElementById('lyrics').value =''
 }
-localStorage.clear();
