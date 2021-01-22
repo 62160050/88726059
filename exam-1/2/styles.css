@@ -1,0 +1,50 @@
+body {
+    font-family: 'Sriracha', cursive;
+    font-size:16px;
+}
+html { 
+    background: url(BG.png) no-repeat center fixed; 
+    background-size: cover;
+    margin: auto;
+}
+#TC{
+	text-align: center;
+}
+tr th, tr td{
+    padding:8px;
+    font-weight:lighter;
+    margin: auto;
+    text-align: center;
+}
+th{
+    border: 3px solid #f567c5;
+}
+td{
+	border: 3px solid #f567c5;
+}
+.button {
+    border-radius: 10px;
+    background-color: #32f5ba;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+div.layoutCen{
+    text-align: center; 
+    font-size:30px;
+    color:#B03060;
+    font-weight:bolder;
+}
+div{
+    margin: auto;
+    font-size:20px;
+    color:#682c0e;
+    font-weight:bolder;
+    width: 80%;
+}

@@ -1,0 +1,55 @@
+/* ใส่ฟ้อนต์ */
+body {
+    font-family: 'Itim', cursive;
+    font-size:35px;
+}
+/* สี background ทั้งหน้า */
+html { 
+    background-color: #f4f5db; 
+} 
+/* จัดกึ่งกลาง ตัวหนา ขนาดและสีตัวอักษร  */
+div{
+    margin: auto;
+    font-size:35px;
+    color:#682c0e;
+    font-weight:bolder;
+    width: 80%;
+    text-align: center;
+}
+/* ตกแต่งปุ่ม */
+.btn{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Itim', cursive;
+    background-color: #000000;
+    font-size:20px;
+}
+.btn1 {
+    color: rgb(55, 219, 40);
+  }
+  
+.btn1:hover {
+    background-color: #18c91e;
+    color: white;
+  }
+.btn2 {
+    color: rgb(247, 0, 115);
+  }
+  
+.btn2:hover {
+    background-color: #ff0000;
+    color: white;
+  }
+/* ตกแต่งช่อง input */
+.txt{
+    font-family: 'Itim', cursive;
+    font-size:20px;
+}
+.txt1{
+    border-style: none;
+    background-color: #f4f5db;
+}

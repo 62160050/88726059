@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- linkฟ้อนต์จากgoogle -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkหน้าcss -->
+    <link rel="stylesheet" href="style.css">
+    <title>Collate words</title>
+</head>
+<body >
+    <div>
+        <h1>เกมทายชื่อจังหวัดในประเทศไทย</h1>
+    <center>
+    <FORM NAME="form1">
+    <!-- สร้างตาราง -->
+    <TABLE CLASS="tab" BORDER="0" >
+        <TR>
+            <TD CLASS="td1">
+                <INPUT TYPE="text" SIZE="46" NAME="hint" class="txt txt1" VALUE="พิมพ์ชื่อจังหวัดที่คุณต้องการจะเดา(ทายได้ 4 ครั้งนะ)" READONLY CLASS="txt1">
+            </TD>
+        </TR>
+        <TR>
+            <TD CLASS="td1">
+                <!-- ช่องให้พิม -->
+                <INPUT TYPE="text" NAME="guess1" SIZE="50" CLASS="txt txt2" placeholder="Enter your guess here.">
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <a>พิมพ์ชื่อที่จะทายแล้วกด "เดาสิ!!"</a>
+            </TD>
+        </TR>
+        <TR>
+            <TD CALSS="td1" >
+                <!-- สร้างปุ่ม -->
+                <INPUT TYPE="button" VALUE="เดาสิ !!" onClick="guessit()" CLASS="btn btn1" TITLE="Click here to get a hint or check your guess." >
+                <INPUT TYPE="button" VALUE="อ่อนจังเลย มาเริ่มใหม่กันนน" onClick="newGame()" CLASS="btn btn2" TITLE="Click here to start a new game." >
+            </TD>
+        </TR>
+    </TABLE>
+    </FORM>
+    </center>
+    </div>
+    <!-- linkหน้าjs -->
+    <script src="CW.js"></script>
+    </body>
+</html>
