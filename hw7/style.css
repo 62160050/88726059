@@ -1,0 +1,29 @@
+html { 
+    background-color: #f4f5db; 
+} 
+.btn{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #000000;
+    font-size:10px;
+}
+.btn1 {
+    color: rgb(55, 219, 40);
+  }
+  
+.btn1:hover {
+    background-color: #18c91e;
+    color: white;
+  }
+.btn2 {
+    color: rgb(247, 0, 115);
+  }
+  
+.btn2:hover {
+    background-color: #ff0000;
+    color: white;
+  }
